@@ -1,7 +1,7 @@
 #include <Wire.h>
 #include <MPU6050.h>
 #include <SPI.h>
-int pinCS = 53; // Pin 10 on Arduino Uno
+int pinCS = 10; // Pin 53 on Arduino Mega
 MPU6050 mpu;
 void setup() 
 {
