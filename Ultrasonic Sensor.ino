@@ -38,13 +38,11 @@ void loop() {
     Serial.print("connected "); 
     Serial.println (host);
 HTTPClient http;
-// String buf = "inches=", in;
 String buf;
   buf += F("inches=");
   buf += String(in, 0);
     Serial.println(buf);
 // Connect to host where MySQL database is hosted, with IPv4 address of our NodeMCU
-//http.begin("http://192.168.1.207:3306/nindex.php");
 http.begin(client, "http://192.168.4.2/phpwrite.php");
 //Specify content-type header
 http.addHeader("Content-Type", "application/x-www-form-urlencoded");       
